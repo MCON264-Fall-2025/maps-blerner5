@@ -26,6 +26,19 @@ public class MaxSumPairEqualDigitSum {
      *         or -1 if no such pair exists
      */
     public int maximumSum(int[] nums) {
+        Map<Integer, Integer> map = new HashMap<>();
+        int max = -1;
+        for (int i = 0; i < nums.length; i++) {
+            int num = nums[i];
+            int sum = digitSum(num);
+            if (map.containsKey(sum)) {
+                max = Math.max(max, num + map.get(sum));
+                map.put(sum, Math.max(map.get(sum), num));
+            } else {
+                map.put(sum, num);
+            }
+        } return max;
+    }
         // TODO: implement
         // Common approach:
         // - For each number, compute its digit sum.

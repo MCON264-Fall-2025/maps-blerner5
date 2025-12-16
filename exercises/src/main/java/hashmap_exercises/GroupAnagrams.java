@@ -22,6 +22,15 @@ public class GroupAnagrams {
      * @return a list of groups, where each group is a list of anagrams
      */
     public List<List<String>> groupAnagrams(String[] strs) {
+        Map <String, List<String>> map = new HashMap<>();
+
+        for (int i = 0; i < strs.length; i++) {
+            String s = strs[i];
+            char[] chars = s.toCharArray();
+            Arrays.sort(chars);
+            String key = new String(chars);
+            map.computeIfAbsent(key, k -> new ArrayList<>()).add(s);
+        }
         // TODO: implement
         // Typical approach:
         // - For each string, sort its characters to get a "canonical form"

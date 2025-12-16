@@ -22,6 +22,19 @@ public class MinimumConsecutiveCards {
      *         or -1 if no such subarray exists
      */
     public int minimumCardPickup(int[] cards) {
+        Map<Integer, Integer> lastSeen = new HashMap<>();
+        int minLength = Integer.MAX_VALUE;
+        for (int i = 0; i < cards.length; i++) {
+            int card = cards[i];
+            if (lastSeen.containsKey(card)) {
+                int j = lastSeen.get(card);
+                minLength = Math.min(minLength, i - j + 1);
+            }
+            lastSeen.put(card, i);
+        }
+        return minLength == Integer.MAX_VALUE ? -1 : minLength;
+    }
+}
         // TODO: implement using a Map<Integer, Integer> to track last seen indices
         // High-level hint:
         // - Keep a map from cardValue -> lastIndexSeen
