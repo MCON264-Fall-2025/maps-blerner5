@@ -1,4 +1,4 @@
-import hashmap_exercises.TreeNode;
+
 
 public class RecursiveTree {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
@@ -8,5 +8,15 @@ public class RecursiveTree {
         merged.left = mergeTrees(t1.left, t2.left);
         merged.right = mergeTrees(t1.right, t2.right);
         return merged;
+    }
+
+    public static class TreeNode {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+
+        public TreeNode(int val) {
+            this.val = val;
+        }
     }
 }
