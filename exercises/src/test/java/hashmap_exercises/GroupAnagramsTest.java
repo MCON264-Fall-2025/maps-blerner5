@@ -2,8 +2,13 @@ package hashmap_exercises;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.*;
+
 import java.util.stream.Collectors;
+import java.util.Map;
+import java.util.HashMap;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.*;
 
