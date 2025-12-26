@@ -1,23 +1,7 @@
 package hashmap_exercises;
 
-/**
- * LeetCode 2342 - Max Sum of a Pair With Equal Sum of Digits
- *
- * You are given a 0-indexed integer array nums.
- * Find the maximum sum of a pair of numbers (nums[i] + nums[j]) such that
- * the sum of digits of nums[i] is equal to the sum of digits of nums[j],
- * and i != j.
- *
- * If no such pair exists, return -1.
- *
- * Example:
- * nums = [18, 43, 36, 13, 7]
- * digit sums: 9, 7, 9, 4, 7
- * Pairs with same digit sum:
- *   (18, 36) -> sum = 54 with digit sum 9
- *   (43, 7)  -> sum = 50 with digit sum 7
- * Answer: 54
- */
+import java.util.Map;
+
 public class MaxSumPairEqualDigitSum {
 
     /**
@@ -37,7 +21,8 @@ public class MaxSumPairEqualDigitSum {
             } else {
                 map.put(sum, num);
             }
-        } return max;
+        }
+        return max;
     }
         // TODO: implement
         // Common approach:
@@ -50,12 +35,12 @@ public class MaxSumPairEqualDigitSum {
         //     else,
         //        store nums[i] as bestSoFar.
         // - Return answer
-    
+
     /**
      * Optional helper method:
      * Computes the sum of digits of a non-negative integer.
      */
-    int digitSum(int x) {
+    private int digitSum(int x) {
         // TODO (optional): implement and use it from maximumSum
         int sum = 0;
         while (x > 0) {
