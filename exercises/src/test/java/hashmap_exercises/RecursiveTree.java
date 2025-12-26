@@ -1,4 +1,4 @@
-public class MergeTwoBinaryTrees {
+public class RecursiveTree {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t1 == null) return t2;
         if (t2 == null) return t1;

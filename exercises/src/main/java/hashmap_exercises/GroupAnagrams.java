@@ -36,7 +36,7 @@ public class GroupAnagrams {
         // - For each string, sort its characters to get a "canonical form"
         // - Use a Map<String, List<String>>: canonicalForm -> list of words
         // - Return the map's values as the result
-        return Collections.emptyList();
+        return new ArrayList<>(map.values());
     }
 }
 

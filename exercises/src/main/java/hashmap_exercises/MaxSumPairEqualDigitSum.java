@@ -49,8 +49,7 @@ public class MaxSumPairEqualDigitSum {
         //        and update bestSoFar if nums[i] is larger.
         //     else,
         //        store nums[i] as bestSoFar.
-        // - Return answer.
-        return -1;
+        // - Return answer
     }
 
     /**
