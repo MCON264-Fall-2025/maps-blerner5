@@ -1,12 +1,10 @@
+
 package hashmap_exercises;
-
-import org.junit.jupiter.api.Test;
-
 import java.util.*;
 import java.util.stream.Collectors;
-
+import java.util.HashSet;
+import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-
 class GroupAnagramsTest {
 
     @Test
