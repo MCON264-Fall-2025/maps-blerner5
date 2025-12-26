@@ -42,6 +42,5 @@ public class MinimumConsecutiveCards {
         //     if cardValue was seen at j, update answer with (i - j + 1)
         //     then update lastIndexSeen for this cardValue to i
         // - If you never update the answer, return -1
-        return -1;
     }
 }
