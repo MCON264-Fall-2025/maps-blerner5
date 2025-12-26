@@ -1,3 +1,5 @@
+import hashmap_exercises.TreeNode;
+
 public class RecursiveTree {
     public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
         if (t1 == null) return t2;
