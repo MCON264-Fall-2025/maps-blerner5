@@ -50,8 +50,7 @@ public class MaxSumPairEqualDigitSum {
         //     else,
         //        store nums[i] as bestSoFar.
         // - Return answer
-    }
-
+    
     /**
      * Optional helper method:
      * Computes the sum of digits of a non-negative integer.
