@@ -2,6 +2,7 @@ package hashmap_exercises;
 
 import org.junit.jupiter.api.Test;
 import java.util.*;
+java.util.stream.Collectors
 
 import static org.junit.jupiter.api.Assertions.*;
 
