@@ -1,8 +1,6 @@
 package hashmap_exercises;
 
 import org.junit.jupiter.api.Test;
-
-
 import java.util.stream.Collectors;
 import java.util.Map;
 import java.util.HashMap;

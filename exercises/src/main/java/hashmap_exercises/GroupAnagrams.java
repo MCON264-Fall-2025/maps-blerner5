@@ -2,17 +2,9 @@ package hashmap_exercises;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.*;
 
-/**
- * LeetCode 49 - Group Anagrams
- *
- * Given an array of strings strs, group the anagrams together.
- * You can return the answer in any order.
- *
- * Example:
- * Input:  ["eat","tea","tan","ate","nat","bat"]
- * Output: [["bat"],["nat","tan"],["ate","eat","tea"]] (order may vary)
- */
+
 public class GroupAnagrams {
 
     /**
